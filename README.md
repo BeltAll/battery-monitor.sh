@@ -15,12 +15,12 @@ To start the service timer at boot, insert the following in the terminal:
 
 `sudo systemctl daemon-reload`
 
-`sudo systemctl enable battery-check.timer`
+`sudo systemctl enable battery-monitor.timer`
 
 To activate the script right now:
 
-`sudo systemctl start battery-check.timer`
+`sudo systemctl start battery-monitor.timer`
 
 The script should now start running every 30 seconds, to check if the service is active, run:
 
-`journalctl -u battery-check.service`
+`journalctl -u battery-monitor.service`
