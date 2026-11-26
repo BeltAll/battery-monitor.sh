@@ -1,0 +1,6 @@
+[Unit]
+Description=Battery Monitor
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/battery-monitor.sh

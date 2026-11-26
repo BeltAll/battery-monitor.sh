@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Battery Monitor Periodically
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=30sec
+AccuracySec=1s
+Unit=battery-monitor.service
+
+[Install]
+WantedBy=timers.target
