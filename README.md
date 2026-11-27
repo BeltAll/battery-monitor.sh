@@ -4,6 +4,8 @@ Config
 
 Make sure to change the battery_percent and is_supply_active is linked to your battery and power adapter under `/sys/class/power_supply` on fedora server.
 
+You can change the threshold of when the shutdown occurs by editing the battery_threshold_percent.
+
 To change the checking interval, change the OnUnitActiveSec under the .timer to the amount of seconds desired.
 
 
